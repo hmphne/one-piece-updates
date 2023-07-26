@@ -3,7 +3,7 @@ let latestChapeter;
 async function latestChapter() {
   const res = await fetch("https://api.api-onepiece.com/chapters/count");
   const record = await res.json();
-  console.log(record);
+  // console.log(record);
   latestChapeter = record
   document.getElementById("chapter_num").innerHTML = record;
 
